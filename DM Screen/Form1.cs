@@ -14,12 +14,29 @@ namespace DM_Screen
     public partial class DMScreen : Form
     {
         int NUMBER_OF_CAMPAIGNS;
-
-        Button[] campaigns;
+        String[] campaign;
         public DMScreen()
         {
             InitializeComponent();
-            String[] campaign = System.IO.File.ReadAllLines(@"res\campaigns\campaigns.txt");
+            loadCampaigns();
+        }
+
+        
+
+        private void cmd_Campaign_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+        }
+
+        private void cmd_addNewCampaign_Click(object sender, EventArgs e)
+        {
+            int n = Int32.Parse(campaign[0]) + 1;
+            campaign[0] = n.ToString();
+        }
+
+        private void loadCampaigns()
+        {
+            campaign = System.IO.File.ReadAllLines(@"res\campaigns\campaigns.txt");
             NUMBER_OF_CAMPAIGNS = Int32.Parse(campaign[0]);
             for (int i = 0; i < NUMBER_OF_CAMPAIGNS; i++)
             {
@@ -30,18 +47,6 @@ namespace DM_Screen
                 flowLayoutPanel1.Controls.Add(btn);
             }
         }
-
-        
-
-        private void cmd_Campaign_Click(object sender, EventArgs e)
-        {
-            Button btn = (Button)sender;
-            lbl_1.Text = lbl_1.Text + btn.Text;
-        }
-
-        private void cmd_addNewCampaign_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+;
