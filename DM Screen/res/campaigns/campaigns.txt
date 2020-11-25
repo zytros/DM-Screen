@@ -1,4 +1,0 @@
-10
-hello
-world
-123
