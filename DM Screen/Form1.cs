@@ -21,7 +21,7 @@ namespace DM_Screen
             String[] campaign = System.IO.File.ReadAllLines(@"C:\Users\Lucalel\source\repos\DM Screen\DM Screen\res\campaigns\campaigns.txt");
             NUMBER_OF_CAMPAIGNS = Int32.Parse(campaign[0]);
             InitializeComponent();
-            buttonArray(10);
+            buttonArray(NUMBER_OF_CAMPAIGNS);
         }
 
         private void buttonArray(int n)
