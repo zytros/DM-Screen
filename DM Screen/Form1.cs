@@ -30,6 +30,9 @@ namespace DM_Screen
 
         private void cmd_addNewCampaign_Click(object sender, EventArgs e)
         {
+            CreateCampaign c = new CreateCampaign();
+            c.ShowDialog();
+
             int n = Int32.Parse(campaign[0]) + 1;
             campaign[0] = n.ToString();
         }
