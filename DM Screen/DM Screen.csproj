@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CampaignScreen.cs" />
     <Compile Include="CreateCampaign.cs">
       <SubType>Form</SubType>
     </Compile>

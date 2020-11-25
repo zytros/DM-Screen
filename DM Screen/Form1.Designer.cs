@@ -37,12 +37,13 @@ namespace DM_Screen
             // 
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 62);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(776, 376);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1200, 607);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // cmd_addNewCampaign
             // 
-            this.cmd_addNewCampaign.Location = new System.Drawing.Point(645, 12);
+            this.cmd_addNewCampaign.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmd_addNewCampaign.Location = new System.Drawing.Point(1069, 12);
             this.cmd_addNewCampaign.Name = "cmd_addNewCampaign";
             this.cmd_addNewCampaign.Size = new System.Drawing.Size(143, 23);
             this.cmd_addNewCampaign.TabIndex = 2;
@@ -54,10 +55,11 @@ namespace DM_Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1224, 681);
             this.Controls.Add(this.cmd_addNewCampaign);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "DMScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DM Screen";
             this.ResumeLayout(false);
 
