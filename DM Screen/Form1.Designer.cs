@@ -1,7 +1,7 @@
 ﻿
 namespace DM_Screen
 {
-    partial class Form1
+    partial class DMScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,44 @@ namespace DM_Screen
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lbl_1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 62);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(776, 376);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // lbl_1
+            // 
+            this.lbl_1.AutoSize = true;
+            this.lbl_1.Location = new System.Drawing.Point(378, 24);
+            this.lbl_1.Name = "lbl_1";
+            this.lbl_1.Size = new System.Drawing.Size(35, 13);
+            this.lbl_1.TabIndex = 1;
+            this.lbl_1.Text = "label1";
+            // 
+            // DMScreen
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.lbl_1);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Name = "DMScreen";
+            this.Text = "DM Screen";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label lbl_1;
     }
 }
 
